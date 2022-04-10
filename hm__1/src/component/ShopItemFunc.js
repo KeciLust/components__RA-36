@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+import { object } from 'prop-types';
 export default function ShopItemFunc(items) {
 const {item} = items;
 return (
@@ -15,3 +17,7 @@ return (
 </div>
 );
 }
+ShopItemFunc.propTypes = {
+  user: PropTypes.instanceOf(object)
+  }
+  
